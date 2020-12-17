@@ -15,7 +15,7 @@ It was supposed to be a simple accounting software to calculate the total daily 
 Being my first ever graphic based project and I was extremely new in Python, I would consider it to be pretty good. It does the intended task easily and it is extremely easy to port between Linux, Windows and MacOS.
 
 Said that, it is still in its extremely crude form, as I never updated it after its initial deployment. Still, few of the upgrades I would like to work on are:
-- Bifurcatint the code into functions.
+- Bifurcating the code into functions.
 - Saving data to SQL (or any-other database)
 - Saving result in a PDF rather then HTML, for better porting.
 - Taking direct print from the software.
