@@ -33,13 +33,18 @@ I would suggest to use the HomeBrew to install the dependencies. Use will see th
 Follow these steps:
 
 1. Before we install HomeBrew, we will need the command line tools for MacOS.
+
 <code> xcode-select --install <code>
   
 2. Copy paste the following code into the terminal:
+
 <code> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" <code>
 
 3. Now we will use the HomeBrew to *brew* the Python and other required packages. Excute
-<code>brew install pygobject3 gtk+3 <code> in the terminal. it will install all the required dependencies, including Python 3.9.0
+
+<code>brew install pygobject3 gtk+3 <code>
+
+in the terminal. it will install all the required dependencies, including Python 3.9.0
   
 For more detailed instaruction head to https://pygobject.readthedocs.io/en/latest/getting_started.html
 
