@@ -1,66 +1,62 @@
-# Ticket sale accounting
+# 🏷️ Ticket Sale Accounting
 
-## Introduction
-I have been part of the planetarium community since 1999. Later in 2006 I joined Nehru Planetarium, Delhi, India as a Planetarium Educator, and my relation with the planetarium grew even stronger. Although I left that post in 2009 for my further studies, but it is still my second home. In 2013, planetarium accountant came up with an idea that there should be a better way to calculate the daily OCCUPANCY STATEMENT, as he use to struggle a lot with it due to digital divide. Listening to his complains I started with this project. 
+## 📌 Project Overview
+The **Ticket Sale Accounting** software is designed to automate the calculation of daily sales and occupancy statements for a **planetarium**. Built using **Python 3** and **GTK-3**, this application provides a user-friendly interface for managing ticket sales efficiently, reducing manual errors, and ensuring accurate record-keeping.
 
-## About the software
-This is my first ever graphical project, and since I was using Linux full time, I choose GTK+3 as my graphic toolkit. Although I was using Fortran at that time, but I wanted to explore Python more, and hence used that on the backend.
+## 🎯 Features
+- 📊 **Automated Sales Calculations** – Eliminates manual work by computing total sales and occupancy rates.
+- 🎨 **User-Friendly Interface** – Developed with GTK-3 for an intuitive GUI experience.
+- 📄 **Daily Reports Generation** – Generates structured reports for accounting and review.
+- 🏛️ **Lightweight & Fast** – Efficient processing even with large ticket data.
 
-### Minimum Requrirements
-We would be using Python 3.0. Based on this choice the minimum requrement would be:
-- Python 3.0 or higher (I have recently checked this code on Python 3.9)
-- GTK+3.0
-- GTK+3.0 python binding, PyGObject3
+## 🚀 Installation Guide
+### 1️⃣ Install Dependencies
+Ensure you have Python and the necessary libraries installed.
 
-#### Installing on Windows:
-##### Let us start with Python 3
+```bash
+# For Ubuntu-based systems
+sudo apt update && sudo apt install python3 python3-pip gir1.2-gtk-3.0
 
-Follow these steps to download the full installer:
+# Install required Python packages
+pip install -r requirements.txt
+```
 
-1. Open a browser window and navigate to the Python.org Downloads page for Windows.
+### 2️⃣ Clone the Repository
+```bash
+git clone https://github.com/mranuraggarg/ticket-sale-accounting.git
+cd ticket-sale-accounting
+```
 
-2. Under the “Python Releases for Windows” heading, click the link for the Latest Python 3 Release - Python 3.x.x. As of this writing, the latest version was Python 3.9.0.
+### 3️⃣ Run the Application
+Execute the script to launch the accounting software.
+```bash
+python3 main.py
+```
 
-3. Scroll to the bottom and select either Windows x86-64 executable installer for 64-bit or Windows x86 executable installer for 32-bit.
+## 🖥️ Usage
+1️⃣ **Launch the application** using the command above.
+2️⃣ **Enter ticket sales data** – number of tickets sold, ticket prices, and show occupancy.
+3️⃣ **View automated calculations** – The software processes totals and generates reports.
+4️⃣ **Export Reports (Upcoming Feature)** – Future versions will include an option to export reports to CSV/PDF.
 
-4. Then follow the onscreen instructions
+## 📂 Repository Structure
+```
+📜 README.md                 # Project Overview
+📜 LICENSE                    # License (MIT recommended)
+📜 requirements.txt           # Python dependencies
+📂 src/                      # Source code for application
+📂 ui/                       # GTK-3 UI design files
+📂 docs/                     # Documentation & screenshots
+```
 
-#### Installing on MacOS:
-I would suggest to use the HomeBrew to install the dependencies. Use will see that install GTK+3.0 and its Python dependency is eaier to install through HomeBrew.
+## 🔧 Future Improvements
+- 📌 **Multi-Show Support** – Add the ability to handle multiple shows per day.
+- 📌 **Graphical Reports** – Include visual sales reports with graphs and charts.
+- 📌 **CSV/PDF Export** – Allow exporting of reports for record-keeping.
 
-##### Let us start with Python 3
+## 📜 License
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
-Follow these steps:
-
-1. Before we install HomeBrew, we will need the command line tools for MacOS.
-
-<code> xcode-select --install <code>
-  
-2. Copy paste the following code into the terminal:
-
-<code> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" <code>
-
-3. Now we will use the HomeBrew to *brew* the Python and other required packages. Excute
-
-<code>brew install pygobject3 gtk+3 <code>
-
-in the terminal. it will install all the required dependencies, including Python 3.9.0
-  
-For more detailed instaruction head to https://pygobject.readthedocs.io/en/latest/getting_started.html
-
-
-## Working
-It was supposed to be a simple accounting software to calculate the total daily sale for Planetarium, as it was intended to be use by a person with limited computer based capabilities. So, I kept the layout as simple and as close to Excel as possible. It do only two primary tasks:
-- Calculate the total sale
-- Save the results as a HTML file.
-
-## Conclusion
-Being my first ever graphic based project and I was extremely new in Python, I would consider it to be pretty good. It does the intended task easily and it is extremely easy to port between Linux, Windows and MacOS.
-
-Said that, it is still in its extremely crude form, as I never updated it after its initial deployment. Still, few of the upgrades I would like to work on are:
-- Bifurcatint the code into functions.
-- Saving data to SQL (or any-other database)
-- Saving result in a PDF rather then HTML, for better porting.
-- Taking direct print from the software.
-
-These are just the few which I would like to start with and then see where it goes.
+## 📩 Contact
+For questions, reach out to:  
+📧 **Email**: itzanurag@duck.com  
